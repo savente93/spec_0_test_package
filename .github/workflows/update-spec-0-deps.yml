@@ -1,0 +1,11 @@
+name: Auto Update Env
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: savente93/spec-zero-tools@main
+
