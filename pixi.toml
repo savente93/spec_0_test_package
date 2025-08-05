@@ -9,10 +9,9 @@ version   = "0.1.0"
 
 [dependencies]
 matplotlib = ">=3.10.5,<4"
-gdal = ">=3.11.3,<4"
 
 [feature.foo.dependencies]
-scipy = "*"
+scipy  = "*"
 xarray = ">=2025.7.1,<2026"
 
 [environments]
