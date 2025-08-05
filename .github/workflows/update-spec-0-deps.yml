@@ -3,6 +3,10 @@ name: Auto Update Env
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -10,4 +14,6 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: savente93/spec-zero-tools@main
+        with: 
+          github_token: ${{ secrets.GH_PAT }}
 
