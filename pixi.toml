@@ -1,10 +1,19 @@
 [workspace]
-authors = ["Sam Vente <savente93@proton.me>"]
-channels = ["conda-forge"]
-name = "spec_0_test_package"
+authors   = ["Sam Vente <savente93@proton.me>"]
+channels  = ["conda-forge"]
+name      = "spec_0_test_package"
 platforms = ["linux-64"]
-version = "0.1.0"
+version   = "0.1.0"
 
 [tasks]
 
 [dependencies]
+matplotlib = ">=3.10.5,<4"
+gdal = ">=3.11.3,<4"
+
+[feature.foo.dependencies]
+scipy = "*"
+xarray = ">=2025.7.1,<2026"
+
+[environments]
+bar = ["foo"]
