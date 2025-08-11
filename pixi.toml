@@ -8,7 +8,7 @@ version   = "0.1.0"
 [tasks]
 
 [dependencies]
-matplotlib = ">=3.10.5,<4"
+matplotlib = ">=3.9.0"
 
 [feature.foo.dependencies]
 scipy  = "*"
