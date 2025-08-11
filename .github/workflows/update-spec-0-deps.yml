@@ -15,5 +15,5 @@ jobs:
     steps:
       - uses: savente93/spec-zero-tools@main
         with: 
-          github_token: ${{ secrets.GH_PAT }}
+          token: ${{ secrets.GH_PAT }}
 
