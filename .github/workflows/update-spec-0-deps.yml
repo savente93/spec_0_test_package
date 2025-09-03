@@ -19,5 +19,4 @@ jobs:
     steps:
       - uses: savente93/update-spec0-dependencies@main
         with:
-          token: ${{ secrets.GH_PAT }}
-          create_pr: false
+          token: ${{ secrets.GH_PAT }} 
