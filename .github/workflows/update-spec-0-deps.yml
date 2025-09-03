@@ -17,6 +17,6 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: savente93/update-spec0-dependencies@v1.0.0-alpha
+      - uses: savente93/update-spec0-dependencies@main
         with:
           token: ${{ secrets.GH_PAT }}
